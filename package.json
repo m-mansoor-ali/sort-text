@@ -1,0 +1,43 @@
+{
+    "name": "sort-text",
+    "displayName": "Sort Text",
+    "description": "This extension allows you to sort lines of text in Visual Studio Code.",
+    "version": "0.0.1",
+    "publisher": "mansoor-ali",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sortTextAsc",
+        "onCommand:extension.sortTextDesc"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.sortTextAsc",
+                "title": "Sort Text Ascending"
+            },
+            {
+                "command": "extension.sortTextDesc",
+                "title": "Sort Text Descending"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
