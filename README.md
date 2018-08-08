@@ -17,9 +17,9 @@ This extension allows you to sort lines of text in Visual Studio Code.
 
 ## Release Notes
 
-### 1.0.0
+### v2.0.0
 
-Initial release of extension Sort Text.
+Added more commands.
 
 
 -----------------------------------------------------------------------------------------------------------
