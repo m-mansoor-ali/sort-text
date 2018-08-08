@@ -11,19 +11,49 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sortTextAsc",
-        "onCommand:extension.sortTextDesc"
+        "onCommand:sortText.sortText",
+        "onCommand:sortText.sortTextReverse",
+        "onCommand:sortText.sortTextCaseInsensitive",
+        "onCommand:sortText.sortTextLineLength",
+        "onCommand:sortText.sortTextLineLengthReverse",
+        "onCommand:sortText.sortTextNumeric",
+        "onCommand:sortText.sortTextUnique",
+        "onCommand:sortText.sortTextShuffle"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sortTextAsc",
-                "title": "Sort Text Ascending"
+                "command": "sortText.sortText",
+                "title": "Sort text (ascending, case sensitive)"
             },
             {
-                "command": "extension.sortTextDesc",
-                "title": "Sort Text Descending"
+                "command": "sortText.sortTextReverse",
+                "title": "Sort text (descending, case sensitive)"
+            },
+            {
+                "command": "sortText.sortTextCaseInsensitive",
+                "title": "Sort text (ascending, case insensitive)"
+            },
+            {
+                "command": "sortText.sortTextLineLength",
+                "title": "Sort text (line length ascending)"
+            },
+            {
+                "command": "sortText.sortTextLineLengthReverse",
+                "title": "Sort text (line length descending)"
+            },
+            {
+                "command": "sortText.sortTextNumeric",
+                "title": "Sort text (numeric)"
+            },
+            {
+                "command": "sortText.sortTextUnique",
+                "title": "Sort text (unique ascending, case sensitive)"
+            },
+            {
+                "command": "sortText.sortTextShuffle",
+                "title": "Sort text (shuffle)"
             }
         ]
     },
