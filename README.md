@@ -5,9 +5,6 @@ This extension allows you to sort lines of text in Visual Studio Code.
 ## Usage
 | Command | Title |
 | --- | --- |
-| sortTextAsc | Sorts all lines of code in the open editor in ascending order|
-| sortTextDesc | Sorts all lines of code in the open editor in desceiding order |
-
 |sortText.sortText | Sorts selected lines of text in ascending order case sensitive|
 |sortText.sortTextReverse | Sorts selected lines of text in descending order case sensitive|
 |sortText.sortTextCaseInsensitive | Sorts selected lines of text in ascending order case insensitive|
@@ -23,5 +20,6 @@ This extension allows you to sort lines of text in Visual Studio Code.
 ### 1.0.0
 
 Initial release of extension Sort Text.
+
 
 -----------------------------------------------------------------------------------------------------------
